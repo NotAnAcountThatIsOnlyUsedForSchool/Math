@@ -1,0 +1,46 @@
+
+
+i = 3
+at = 1
+import sys
+tn=(float(input("What is target number:")))
+if (tn % 2) == 0: # The check for the odd or even I not make because i not understand the modulator
+    print("Your number was even...")
+    print("Starting Now")
+    print()
+    print("starting at", i,)
+print()
+while at!=tn:
+    at += 1
+    i += 3
+    print("Number", at,"is", i,)
+    print()
+    if at==tn:
+        break
+    at += 1
+    i -= 1
+    print("Number", at,"is", i,)
+    print()
+    if at==tn:
+        break
+ 
+else:
+    print("Your number was odd...")
+    print("Starting Now")
+    print()
+    tn += 1
+    print("starting at", i,)
+    print()
+    while at!=tn:
+        at += 1
+        i += 3
+        print("Number", at,"is", i,)
+        print()
+        if at==tn:
+            break
+        at += 1
+        i -= 1
+        print("Number", at,"is", i,)
+        print()
+        if at==tn:
+            break
