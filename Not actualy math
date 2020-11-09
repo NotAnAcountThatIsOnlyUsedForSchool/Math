@@ -1,0 +1,42 @@
+import random
+
+lodd = []
+
+for x in range(0,10):
+    grade=""
+
+
+
+
+    chr1 = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"]
+    notclassinprogramming = str(input("What grade: "))
+
+    if notclassinprogramming == "1":
+        grade=chr1[0]
+    if notclassinprogramming == "2":
+        grade=chr1[1]
+    if notclassinprogramming == "3":
+        grade=chr1[2]
+    if notclassinprogramming == "4":
+        grade=chr1[3]
+    if notclassinprogramming == "5":
+        grade=chr1[4]
+    if notclassinprogramming == "6":
+        grade=chr1[5]
+    if notclassinprogramming == "a":
+        grade=chr1[6]
+    if notclassinprogramming == "b":
+        grade=chr1[7]
+    if notclassinprogramming == "c":
+        grade=chr1[8]
+    if notclassinprogramming == "d":
+        grade=chr1[9]
+
+
+
+    max = int(input("What is max: "))
+    max+=1
+    for x in range(1,max):
+        output=(grade,x)
+        lodd.append(output)
+    print(lodd)
